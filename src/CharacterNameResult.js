@@ -18,7 +18,7 @@ class CharacterNameResult extends React.Component {
         var config = {
             headers: { 'Access-Control-Allow-Origin': '*' }
         };
-        axios.get("https://prototypeapi20200111100552.azurewebsites.net/GetMostAppearedPerson").then(result => {
+        axios.get("https://prototypeapi20200111100552.azurewebsites.net/api/Prototype/GetMostAppearedPerson").then(result => {
             const response = result.data;
             this.setState({ characters: response });
         })
