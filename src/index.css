@@ -85,6 +85,14 @@ body {
     border-radius: 10px;
     box-shadow: 3px 3px 8px 0 #000;
 }
+.tdRight{
+    width:50%;
+    text-align:right;
+}
+.tdLeft {
+    width: 50%;
+    text-align: left;
+}
 /*div.NoScroll {
     width: 100%;
     height: 100%;

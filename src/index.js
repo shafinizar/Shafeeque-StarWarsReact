@@ -4,6 +4,7 @@ import './index.css';
 import logo from './Star_Wars_Logo.svg.png';
 import MovieNameResult from './MovieNameResult'
 import CharacterNameResult from './CharacterNameResult'
+import SpeciesNameResult from './SpeciesNameResult'
 
 class Page extends React.Component {
     constructor(props) {
@@ -28,7 +29,7 @@ class Page extends React.Component {
                 <div> <input type="submit" value="Do. Or do not. There is no try." onClick={this.handleToggleClick} className={btn_class} /></div>               
                 <div className="spaceBtwResDivs"></div>
                 <div className="spaceBtwDivs"></div>
-                {this.state.showResults ? <div><MovieNameResult /> <CharacterNameResult /></div> : null}
+                {this.state.showResults ? <div><MovieNameResult /> <CharacterNameResult /> <SpeciesNameResult/> </div> : null}
             </div>
         );
     }
